@@ -10,5 +10,4 @@ inputs:
 
 run:
   path: sh
-  args: [ "./run-newman.sh", "./test-collection.json", "./test-environment.json" ]
-  dir: ./newman
+  args: [ "./run-newman.sh" ]

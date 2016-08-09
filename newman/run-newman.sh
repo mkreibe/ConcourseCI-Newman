@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Checking for NPM"
-echo "  Collection URL:  " $1
-echo "  Environment URL: " $2
+echo "  Collection URL:  " $COLLECTION_URL
+echo "  Environment URL: " $ENVIRONMENT_URL
 
 echo "Node Version:       " `node -v`
 echo "NPM Version:        " `npm -v`

@@ -18,3 +18,4 @@ jobs:
     trigger: true
   - task: run-newman
     file: test-script-repo/newman/newman-task.yml
+    params: {"ENVIRONMENT_URL": "env", "COLLECTION_URL": "url"}
