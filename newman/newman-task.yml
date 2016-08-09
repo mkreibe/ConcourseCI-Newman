@@ -9,5 +9,9 @@ inputs:
 - name: newman
 
 run:
-  path: sh
-  args: [ "./run-newman.sh" ]
+  path: ls
+  args: [ "-la" ]
+
+
+#  path: sh
+#  args: [ "./run-newman.sh" ]
