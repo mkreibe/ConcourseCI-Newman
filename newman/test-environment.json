@@ -1,16 +1,16 @@
 {
 	"id": "b7e41eac-1640-cf79-4e26-ce90adec696e",
-	"name": "Localhost",
+	"name": "Test-Server",
 	"values": [
 		{
 			"key": "port",
-			"value": "63333",
+			"value": "8080",
 			"type": "text",
 			"enabled": true
 		},
 		{
 			"key": "server",
-			"value": "localhost",
+			"value": "172.28.10.23",
 			"type": "text",
 			"enabled": true
 		},
