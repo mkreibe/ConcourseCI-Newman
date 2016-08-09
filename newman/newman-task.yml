@@ -6,7 +6,7 @@ image_resource:
   source: { repository: postman/newman_alpine33 }
   
 inputs:
-- name: newman
+- name: newman-repo
 
 run:
   path: ls
@@ -14,4 +14,4 @@ run:
 
 
 #  path: sh
-#  args: [ "newman/run-newman.sh" ]
+#  args: [ "newman-repo/run-newman.sh" ]

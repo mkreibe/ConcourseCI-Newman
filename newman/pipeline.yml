@@ -18,6 +18,4 @@ jobs:
   - get: newman-repo
   - task: run-newman
     file: newman-repo/newman/newman-task.yml
-    inputs:
-    - name: newman-repo
     params: {"ENVIRONMENT_URL": "env", "COLLECTION_URL": "url"}
