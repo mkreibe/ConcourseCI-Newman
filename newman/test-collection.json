@@ -1,0 +1,34 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Northwind",
+		"_postman_id": "3d6f11e0-20e9-1bc7-4237-598700e7b01f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Northwind [Status]",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "{{protocol}}://{{server}}:{{port}}/status",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

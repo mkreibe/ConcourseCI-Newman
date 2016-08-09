@@ -1,0 +1,29 @@
+{
+	"id": "b7e41eac-1640-cf79-4e26-ce90adec696e",
+	"name": "Localhost",
+	"values": [
+		{
+			"key": "port",
+			"value": "63333",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "server",
+			"value": "localhost",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "protocol",
+			"value": "http",
+			"type": "text",
+			"enabled": true
+		}
+	],
+	"timestamp": 1470333035349,
+	"synced": false,
+	"syncedFilename": "",
+	"team": null,
+	"isDeleted": false
+}

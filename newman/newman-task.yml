@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: { repository: postman/newman_ubuntu1404 }
+
+inputs:
+- name: newman
+
+run:
+  path: sh
+  
+  args: ["./run-newman.sh",
+         "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-environment.json"
+         "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-collection.json"]
+  dir: ./newman
