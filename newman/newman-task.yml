@@ -10,5 +10,5 @@ inputs:
 
 run:
   path: ls
-  args: ["-la ./newman-repo"]
+  args: ["-laR"]
  # newman-repo/newman/run-newman
