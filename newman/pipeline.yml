@@ -1,9 +1,5 @@
 ---
 resources:
-- name: 1m
-  type: time
-  source: {interval: 1m}
-
 - name: newman-repo
   type: git
   source:
@@ -13,8 +9,6 @@ jobs:
 - name: test-rest-api
   public: true
   plan:
-  - get: 1m
-    trigger: true
   - get: newman-repo
   - task: run-newman
     file: newman-repo/newman/newman-task.yml
