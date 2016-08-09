@@ -12,4 +12,4 @@ jobs:
   - get: newman-repo
   - task: test-api
     file: newman-repo/newman/newman-task.yml
-    params: { "ENVIRONMENT_URL": "test", "COLLECTION_URL": "I need this to work." }
+    params: { "ENVIRONMENT_URL": "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-environment.json", "COLLECTION_URL": "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-collection.json" }
