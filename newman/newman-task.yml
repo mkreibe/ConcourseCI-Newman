@@ -9,4 +9,6 @@ inputs:
 - name: newman-repo
 
 run:
-  path: newman-repo/newman/run-newman
+  path: ls
+  args: ["-la"]
+ # newman-repo/newman/run-newman

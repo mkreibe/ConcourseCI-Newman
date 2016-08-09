@@ -10,6 +10,6 @@ jobs:
   public: true
   plan:
   - get: newman-repo
-  - task: run-newman
+  - task: test-api
     file: newman-repo/newman/newman-task.yml
-    params: {"ENVIRONMENT_URL": "env", "COLLECTION_URL": "url"}
+    params: { "ENVIRONMENT_URL": "test", "COLLECTION_URL": "I need this to work." }
