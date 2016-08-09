@@ -1,10 +1,19 @@
 #!/bin/bash
 
 echo "Checking for NPM"
-echo "Node Version:   " `node -v`
-echo "NPM Version:    " `npm -v`
-echo "Newman Version: " `newman --version`
+echo "  Collection URL:  " $1
+echo "  Environment URL: " $2
 
-newman -s -C -S --environment-url https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-environment.json -url https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-collection.json
+echo "Node Version:       " `node -v`
+echo "NPM Version:        " `npm -v`
+echo "Old Newman Version: " `newman --version`
+
+echo "  Install newest newman version."
+npm install newman --global --no-spin
+
+echo "New Newman Version: " `newman --version`
+
+# using the v3 syntax.
+newman run $1 -e $2 --bail --no-color
 
 echo "Complete!"

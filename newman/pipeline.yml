@@ -1,0 +1,20 @@
+---
+resources:
+- name: 1m
+  type: time
+  source: {interval: 1m}
+
+- name: test-script-repo
+  type: git
+  source:
+    uri: https://github.com/mkreibe/ConcourseCI-Newman.git
+  
+jobs:
+- name: job-test-rest-endpoints
+  public: true
+  plan:
+  - get: test-script-repo
+  - get: 1m
+    trigger: true
+  - task: run-newman
+    file: test-script-repo/newman/newman-task.yml
