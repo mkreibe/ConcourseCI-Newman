@@ -5,6 +5,10 @@ image_resource:
   type: docker-image
   source: { repository: postman/newman_alpine33 }
 
+inputs:
+- name: newman
+
 run:
   path: sh
   args: [ "./run-newman.sh", "./test-collection.json", "./test-environment.json" ]
+  dir: ./newman
